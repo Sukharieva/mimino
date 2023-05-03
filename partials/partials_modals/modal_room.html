@@ -1,0 +1,110 @@
+<!-- <button
+            class="hotel-lux-btn js-open-modal"
+            type="button"
+            data-modal="2"
+          >
+            номер
+          </button> -->
+
+<div class="modal modal-order-room-container" data-modal="2">
+  <div class="">
+    <button
+      type="button"
+      class="close-btn-modal js-modal-close"
+      data-modal-close
+    >
+      <svg class="close-btn-modal-svg" width="24" height="24">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="modal-order-room-form">
+      <p class="modal-order-room-mission">ЗАБРОНЮВАТИ НОМЕР</p>
+
+      <!--- два блока для деска----->
+
+      <div class="modal-order-room-blocks-1-2">
+        <!--- имя дата заезда----->
+        <div class="modal-order-room-block">
+          <label class="modal-order-room-label label-top-part">
+            <input
+              type="text"
+              class="modal-order-room-select modal-border"
+              name="user_name"
+              required
+              pattern="^[a-zA-Zа-яА-Я]+$"
+              minlength="2"
+              placeholder="Ваше ім’я"
+            />
+            <span class="modal-order-room-text"
+              >На кого забронювати номер?</span
+            >
+          </label>
+
+          <label class="modal-order-room-label">
+            <input
+              type="tel"
+              class="modal-order-room-input modal-border"
+              name="user_phone"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              placeholder="+38 (___) ___-__-__"
+            />
+            <span class="modal-order-room-text">Номер телефону</span>
+          </label>
+        </div>
+
+        <div class="modal-order-room-block-4">
+          <label class="modal-order-room-label" for="select"
+            ><select
+              class="modal-order-room-select modal-border test"
+              id="select"
+              name="select"
+            >
+              <option value="value1" selected>Двомісний Люкс</option>
+              <option value="value2">Двомісний</option>
+              <option value="value3">Трьохмісний</option>
+            </select>
+            <span class="modal-order-room-text">Категорія номеру</span>
+          </label>
+        </div>
+
+        <div class="modal-order-room-block">
+          <label class="modal-order-room-label" for="start"
+            ><input
+              class="modal-order-room-select modal-border test"
+              type="date"
+              id="start"
+              name="trip-start"
+              value="2023-02-22"
+              min="2023-02-22"
+              max="2023-12-31"
+            />
+
+            <span class="modal-order-room-text">Дата заїзду</span></label
+          >
+
+          <!--- кол-во и дата ---->
+          <label class="modal-order-room-label" for="start1">
+            <input
+              class="modal-order-room-select modal-border test"
+              type="date"
+              id="start1"
+              name="trip-start"
+              value="2023-02-22"
+              min="2023-02-22"
+              max="2023-12-31"
+            />
+
+            <span class="modal-order-room-text">Дата виїзду</span></label
+          >
+        </div>
+      </div>
+
+      <button type="submit" class="modal-order-room-btn button">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="overlay" id="js-overlay-modal"></div>

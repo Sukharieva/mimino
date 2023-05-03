@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon_rest.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+
+    
+
+    <!-- Normalize -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
+    <!-- Slider -->
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+    <!-- Styles -->
+
+    <link rel="stylesheet" href="./css/css_home_page/styles.css" />
+  </head>
+  <body>
+    
+
+    <!-- Loads the specified .html file -->
+    
+
+    <!-- Alina header -->
+    <load src="partials/header.html" />
+
+    <main>
+
+      <!-- Alina hero -->
+      <load src="partials/home_page/section_hero.html" />
+
+      <!-- Kravchuk about restaurant -->
+      <load src="partials/home_page/section_about_restaurant.html" />
+
+      <!-- Orest details restaurant -->
+      <load src="partials/home_page/section_details_restaurant.html" />
+
+      <!-- Dubin  about hotel -->
+      <load src="partials/home_page/section_about_hotel.html" />
+
+      <!-- Tetiana details hotel -->
+      <load src="partials/home_page/section_details_hotel.html" />
+
+      <!-- Michael contacts -->
+      <load src="partials/home_page/section_map.html" />
+
+      
+    </main>
+
+    <!-- Michael footer -->
+    <load src="partials/footer.html" />
+
+    <!-- Modals -->
+    <load src="partials/partials_modals/modal_price.html" />
+    <load src="partials/partials_modals/modal_table.html" />
+    <load src="partials/partials_modals/modal_room.html" />
+
+    <div class="overlay js-overlay-modal"></div>
+
+    
+    <script src="https://unpkg.com/splitting/dist/splitting.js"></script>
+    <script type="module" src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+  </body>
+</html>

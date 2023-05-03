@@ -1,0 +1,254 @@
+/* ===========Restaurant Page============ */
+
+/* ===Mobile=== */
+.restaurant-page-home {
+  padding-top: 16px;
+  padding-bottom: 72px;
+  background-color: var(--light-background-color);
+}
+
+.restaurant-container {
+  position: relative;
+}
+
+.logo-img-container {
+  margin-bottom: 32px;
+}
+
+.over-text {
+  font-family: 'Times New Roman';
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--grey-text-color);
+  margin-bottom: 12px;
+}
+
+.logo-text {
+  font-family: 'Film P3';
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  color: var(--title-text-color);
+  margin-bottom: 12px;
+}
+
+.image-text-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.photo-restaurant-left {
+  background: var(--shadow-background-color);
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.text-page-home {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  max-width: 258px;
+  margin-bottom: 28px;
+}
+
+.brown {
+  margin-left: 20px;
+  width: 163px;
+  color: var(--brown-text-color);
+}
+
+.photo-restaurant-right {
+  margin-left: auto;
+  background: var(--shadow-background-color);
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.rest-slider-img-container {
+  margin-left: auto;
+  position: initial;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.14);
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  height: 245px;
+  max-width: 326px;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-right: -15px;
+}
+
+.rest-slider-wrapper {
+  display: flex;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.restaurant-button-right1 {
+  position: absolute;
+  top: 103%;
+  left: 87%;
+  bottom: 0px;
+  width: 46px;
+}
+
+.restaurant-button-left1 {
+  position: absolute;
+  top: 103%;
+  left: 72%;
+  bottom: 0;
+  width: 46px;
+}
+
+/* ===/Mobile=== */
+
+/* ===Tablet=== */
+@media screen and (min-width: 1024px) {
+  .restaurant-page-home {
+    padding-top: 120px;
+    padding-bottom: 82px;
+  }
+
+  .logo-img-container {
+    position: relative;
+    display: flex;
+  }
+
+  .text-container {
+    flex-wrap: wrap;
+    margin-left: 32px;
+  }
+
+  .over-text {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+
+  .logo-text {
+    font-size: 64px;
+    margin-bottom: 24px;
+  }
+
+  .text-page-home {
+    font-size: 16px;
+    max-width: 454px;
+    margin-right: 26px;
+  }
+
+  .photo-restaurant-right {
+    position: relative;
+    top: -152px;
+  }
+
+  .image-text-container {
+    position: relative;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .brown {
+    width: 312px;
+    margin-left: 48px;
+  }
+
+  .photo-restaurant-left {
+    position: relative;
+    top: -196px;
+  }
+
+  .rest-slider-img-container {
+    position: absolute;
+    max-width: 428px;
+    height: 195px;
+    gap: 20px;
+    bottom: 30px;
+    right: 60px;
+    margin-left: 0;
+  }
+  .rest-slider-wrapper {
+    display: flex;
+    column-gap: 0px;
+    padding-left: 231px;
+  }
+
+  .restaurant-button-right1 {
+    position: absolute;
+    top: 1046px;
+    left: 878px;
+    bottom: 0px;
+  }
+
+  .restaurant-button-left1 {
+    position: absolute;
+    top: 1046px;
+    left: 813px;
+  }
+
+  .slider-img {
+    width: 194px;
+    height: 194px;
+  }
+
+  
+}
+
+/* ===/Tablet=== */
+
+/* ===Desktop=== */
+@media screen and (min-width: 1280px) {
+  .restaurant-page-home {
+    padding-bottom: 0px;
+  }
+
+  .text-page-home {
+    max-width: 518px;
+    margin-right: 37px;
+  }
+
+  .brown {
+    margin-top: -45px;
+  }
+
+  .rest-slider-wrapper {
+    display: flex;
+    column-gap: 0px;
+    padding-left: 0px;
+  }
+
+  .restaurant-button-right1 {
+    position: absolute;
+    top: 1085px;
+    left: 1094px;
+    bottom: 0px;
+  }
+
+  .restaurant-button-left1 {
+    position: absolute;
+    top: 1085px;
+    right: -22px;
+    bottom: 0;
+    left: 1029px;
+  }
+
+  .rest-slider-img-container {
+    max-width: 548px;
+    height: 254px;
+    bottom: 128px;
+    right: 16px;
+    margin-left: 0;
+  }
+  .slider-img {
+    width: 254px;
+    height: 254px;
+  }
+
+}
+
+/* ===/Desktop=== */
+
+/* ===========/Restaurant Page============ */
