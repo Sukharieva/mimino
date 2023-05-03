@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon_rest.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>room page</title>
+
+
+    <!-- Normalize -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
+    <!-- Slider -->
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+    <!-- Styles -->
+
+    <link rel="stylesheet" href="./css/css_room_triple/styles.css" />
+  </head>
+  <body>
+    
+
+    <!-- Loads the specified .html file -->
+    
+
+    <!-- Alina header -->
+    <load src="partials/header.html" />
+
+    <main>
+
+      <!-- Valentii hero -->
+      <load src="partials/partials_room_triple/section_room_hero.html" />
+
+      <!-- Vladiniv about room -->
+      <load src="partials/partials_room_triple/section_about_room.html" />
+
+      
+    </main>
+
+    <!-- Michael footer -->
+    <load src="partials/footer.html" />
+
+    <!-- Modals -->
+    <load src="partials/partials_modals/modal_price.html" />
+    <load src="partials/partials_modals/modal_table.html" />
+    <load src="partials/partials_modals/modal_room.html" />
+
+    <div class="overlay js-overlay-modal"></div>
+
+    <script src="https://unpkg.com/splitting/dist/splitting.js"></script>
+    <script type="module" src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<div class="modal modal-price" data-modal="3">
+  
+    <button class="close-btn-modal js-modal-close">
+      <svg class="modal-price-svg" width="18" height="18">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal-price-title">ЦІНИ НА НОМЕР</h2>
+
+    <form>
+      <label class="label-category" for="category">
+        <select class="modal-price-category" name="category" id="category">
+        <option value="l" selected>Двомісний люкс</option>
+          <option value="2">Двомісний номер</option>
+          <option value="3">Трьохмісний номер</option>
+          
+        </select>
+        <span class="label-category-text">Категорія номеру</span> 
+      </label>
+
+      <div class="modal-price-flex">
+        <label class="label-category" for="night">
+          <select class="input-night test" name="night" id="night">
+            <option selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <span class="label-category-text-2">
+          Кількість ночей</span>
+        </label>
+
+        <label class="label-category" for="cost">
+          <select class="input-night tick" name="cost" id="cost">
+            <option selected>1000</option>
+            <option value="2">2000</option>
+            <option value="3">3000</option>
+          </select>
+          <span class="label-category-text-2">
+          Вартість, грн.</span>
+        </label>
+      </div>
+
+      <button class="modal-submit-btn" type="submit">ЗАБРОНЮВАТИ НОМЕР</button>
+    </form>
+
+</div>
+<div class="overlay" id="js-overlay-modal"></div>
